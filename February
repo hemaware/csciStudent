@@ -1,0 +1,18 @@
+
+public class ExP3_7
+{  
+   public static void main(String[] args)
+   {  
+      Student student = new Student("Cracker, Carl");
+      
+      student.addQuiz(8);
+      student.addQuiz(6);
+      student.addQuiz(9);
+
+      System.out.print(student.getName());
+      System.out.print("'s quiz score total is ");
+      System.out.print(student.getTotalScore());
+      System.out.print(", and the average is ");
+      System.out.println(student.getAverageScore());
+   }
+}
