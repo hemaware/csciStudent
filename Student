@@ -1,0 +1,50 @@
+public class Student
+{ 
+  
+   public Student()
+   {  
+      name = "";
+      totalScore = 0;
+      quizCount = 0;
+   }
+
+  
+   public Student(String n)
+   {  
+      name = n;
+      totalScore = 0;
+      quizCount = 0;
+   }
+
+
+   public String getName()
+   {  
+      return name;
+   }
+
+ 
+   public void addQuiz(int score)
+   {  
+      totalScore = totalScore + score;
+      quizCount = quizCount + 1;
+   }
+
+
+   public double getTotalScore()
+   {  
+      return totalScore;
+   }
+
+   /**
+      Gets the average of all quiz scores.
+      @return the average score
+   */
+   public double getAverageScore()
+   {  
+      return totalScore / quizCount;
+   }
+
+   private String name;
+   private double totalScore;
+   private int quizCount;
+}
